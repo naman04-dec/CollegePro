@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+{% load static %}
+
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Book Rent</title>
+    <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+
+    <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">BookRent</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="/">Home</a></li>
+      <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Browse
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li class="dropdown-header">Browse</li>
+          <li><a href="/paidstories">Paid Stores</a></li>
+          <li><a href="/editorpick">Editor's Picks</a></li>
+          <li><a href="/adventurestor">Adventure</a></li>
+          <li><a href="/shortstories">Short Story</a></li>
+          <li class=disabled><a href="#">Poetry</a></li>
+          <li class=disabled><a href="#">Science Fiction</a></li>
+        </ul>
+      </li>
+      <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Writer Opportunities
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="#">Writer Resources</a></li>
+          <li><a href="#">Writer Programs</a></li>
+          <li><a href="#">Writer Contests</a></li>
+        </ul>
+      </li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="/signup"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      <li><a href="/accounts/login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+    </ul>
+
+  </div>
+</nav>
+
+
+
+<div class="container" align='center'>
+   {%block body_block%}
+   {%endblock %}
+ </div>
+
+
+  </body>
+</html>
